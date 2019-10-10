@@ -5,6 +5,10 @@ steps:
 - name: test
   image: rust:1.30
   commands:
+  - export RUSTFLAGS=-Ctarget-feature=+aes,+ssse3
+  - export PATH=$HOME/.local/bin:$PATH
+  - export LD_LIBRARY_PATH=$HOME/lib
+  - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
   - cargo build --verbose 
   - cargo test --verbose 
 
