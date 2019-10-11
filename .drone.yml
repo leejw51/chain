@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: test
-  image: ubuntu 
+  image: ubuntu:trusty
   commands:
   - ./prepare.sh
   - export PATH=/root/.cargo/bin:$PATH
