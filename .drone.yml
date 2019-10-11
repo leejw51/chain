@@ -7,6 +7,13 @@ steps:
   commands:
   - ./prepare.sh
   - export PATH=/root/.cargo/bin:$PATH
+  - export RUST_BACKTRACE=1
+  - export RUSTFLAGS=-Ctarget-feature=+aes,+ssse3
+  - export PATH=$HOME/.local/bin:$PATH
+  - export LD_LIBRARY_PATH=$HOME/lib
+  - export LIBRARY_PATH=$HOME/lib
+  - export PATH=$HOME/.cargo/bin:$PATH
+  - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
   - cd client-cli 
   - cargo build --verbose --all
   - cargo test --verbose --all
