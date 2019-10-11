@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: test
-  image: ubuntu
+  image: chain 
   commands:
   - ./prepare.sh
   - cd client-cli 
