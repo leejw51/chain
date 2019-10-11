@@ -14,7 +14,9 @@ steps:
   - export LIBRARY_PATH=$HOME/lib
   - export PATH=$HOME/.cargo/bin:$PATH
   - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
-  - ./install_zeromq.h
+  - echo $HOME
+  - pwd
+  - ./install_zeromq.sh
   - ./install_kcov.sh
   - cd client-cli 
   - cargo build
