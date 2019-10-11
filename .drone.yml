@@ -5,6 +5,7 @@ steps:
 - name: test
   image: rust:1.38.0
   commands:
+  - source ./prepare.sh
   - cd client-cli 
   - cargo build --verbose --all
   - cargo test --verbose --all
