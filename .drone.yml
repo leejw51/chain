@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: test
-  image: rust:1.38.0
+  image: ubuntu/trusty 
   commands:
   - ./prepare.sh
   - cd client-cli 
