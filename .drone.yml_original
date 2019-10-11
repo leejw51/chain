@@ -3,9 +3,9 @@ name: default
 
 steps:
 - name: test
-  image: chain
-  pull: never
+  image: ubuntu:trusty
   commands:
+  - ./prepare.sh
   - export PATH=/root/.cargo/bin:$PATH
   - export RUST_BACKTRACE=1
   - export RUSTFLAGS=-Ctarget-feature=+aes,+ssse3
@@ -16,6 +16,8 @@ steps:
   - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
   - echo $HOME
   - pwd
+  - ./install_zeromq.sh
+  - ./install_kcov.sh
   - cargo build
   - cargo test
   - echo "done"
