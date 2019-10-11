@@ -18,7 +18,6 @@ steps:
   - pwd
   - ./install_zeromq.sh
   - ./install_kcov.sh
-  - cd client-cli 
   - cargo build
   - cargo test
 
