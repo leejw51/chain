@@ -6,6 +6,7 @@ steps:
   image: ubuntu 
   commands:
   - ./prepare.sh
+  - export PATH=/root/.cargo/bin:$PATH
   - cd client-cli 
   - cargo build --verbose --all
   - cargo test --verbose --all
