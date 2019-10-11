@@ -14,4 +14,5 @@ apt install curl -y
 apt install libssl-dev libcurl4-openssl-dev libelf-dev libdw-dev cmake gcc binutils-dev libc6-dev -y
 
 curl https://sh.rustup.rs -sSf | sh -s -- -y
+$HOME/.cargo/env
 echo "prepare OK2"
