@@ -11,4 +11,5 @@ apt install python3 libssl-dev libcurl4-openssl-dev libelf-dev libdw-dev cmake g
 apt install pkg-config -y
 
 curl https://sh.rustup.rs -sSf | sh -s -- -y
+cmake --version
 echo "prepare OK"

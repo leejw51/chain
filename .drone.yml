@@ -16,8 +16,5 @@ steps:
   - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
   - echo $HOME
   - pwd
-  - ./install_zeromq.sh
-  - ./install_kcov.sh
-  - cargo build
-  - cargo test
+ 
 
