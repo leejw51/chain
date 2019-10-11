@@ -11,4 +11,6 @@ rm -rf /var/lib/apt/lists/*
 apt update
 apt install curl
 apt install libssl-dev libcurl4-openssl-dev libelf-dev libdw-dev cmake gcc binutils-dev libc6-dev
+
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 echo "prepare OK2"
