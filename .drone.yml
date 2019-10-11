@@ -17,6 +17,6 @@ steps:
   - ./install_zeromq.h
   - ./install_kcov.sh
   - cd client-cli 
-  - cargo build --verbose --all
-  - cargo test --verbose --all
+  - cargo build
+  - cargo test
 
