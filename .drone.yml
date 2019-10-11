@@ -20,5 +20,6 @@ steps:
   - ./install_kcov.sh
   - cargo build
   - cargo test
+  - echo "done"
  
 
