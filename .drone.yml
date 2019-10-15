@@ -16,6 +16,7 @@ steps:
   - export PKG_CONFIG_PATH=$HOME/lib/pkgconfig
   - echo $HOME
   - pwd
+  - echo "OK"
   - cargo build
   - cargo test
   - echo "done"
